@@ -1,0 +1,24 @@
+# Metadata
+*.egg-info/
+tgcli-egg.info/
+build/
+dist/
+*.egg
+
+# Byte/Python code
+__pycache__/
+*.pyc
+*.pyo
+
+# Telegram Sessions
+*.session
+*.session-journal
+
+# venv
+.venv/
+venv/
+env/
+
+# Local Configs
+.env
+conf.py

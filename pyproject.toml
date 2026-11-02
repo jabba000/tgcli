@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tgcli"
+version = "0.1.0"
+description = "Telegram terminal client (curses + Telethon), inspired by paul-nameless/tg"
+readme = "readme.md"
+requires-python = ">=3.9"
+dependencies = ["telethon>=1.34"]
+
+[project.optional-dependencies]
+fast = ["cryptg"]        # much faster media transfers
+meta = ["hachoir"]       # audio/video metadata when uploading files
+
+[project.scripts]
+tgcli = "tgcli.__main__:main"
+
+[tool.setuptools]
+packages = ["tgcli"]
